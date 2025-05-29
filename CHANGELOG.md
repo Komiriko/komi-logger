@@ -1,4 +1,16 @@
 
+## v1.1.1
+
+[compare changes](https://github.com/Komiriko/komi-logger/compare/v1.1.0...v1.1.1)
+
+### 📖 Documentation
+
+- **📖:** [Update README with additional documentation links] ([fc3b890](https://github.com/Komiriko/komi-logger/commit/fc3b890))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.0
 
 
