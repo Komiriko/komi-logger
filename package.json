@@ -1,0 +1,107 @@
+{
+  "name": "komi-logger",
+  "version": "1.0.0",
+  "author": "Komiriko",
+  "description": "High-performance, type-safe logging library for Bun with advanced TypeScript body intersection, modular strategy pattern, transform streams, and immutable API design.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "bun",
+    "typescript",
+    "logger",
+    "logging",
+    "type-safe",
+    "strategy-pattern",
+    "streams",
+    "async",
+    "performance",
+    "event-driven",
+    "intersection-types",
+    "modular",
+    "transform-streams",
+    "body-intersection"
+  ],
+  "exports": {
+    "./enums": "./dist/enums/index.js",
+    "./error": "./dist/error/index.js",
+    "./error/types": "./dist/error/types/index.js",
+    "./strategies": "./dist/strategies/index.js",
+    "./types": "./dist/types/index.js",
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun builder.ts",
+    "docs": "typedoc --tsconfig tsconfig.dts.json",
+    "fix-lint": "eslint --fix ./source",
+    "lint": "eslint ./source",
+    "start": "bun build/index.js",
+    "test:unit": "bun test --coverage $(find test/unit -name '*.spec.ts')",
+    "test": "bun test --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@stylistic/eslint-plugin": "^4.4.0",
+    "@types/bun": "^1.2.15",
+    "eslint": "^9.27.0",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "globals": "^16.2.0",
+    "tsc-alias": "^1.8.16",
+    "typedoc": "^0.28.5",
+    "typescript-eslint": "^8.33.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "changelog": {
+    "types": {
+      "feat": {
+        "title": "🚀 Enhancements",
+        "semver": "minor"
+      },
+      "perf": {
+        "title": "⚡ Performance",
+        "semver": "patch"
+      },
+      "fix": {
+        "title": "🔧 Fixes",
+        "semver": "patch"
+      },
+      "refactor": {
+        "title": "🧹 Refactors",
+        "semver": "patch"
+      },
+      "docs": {
+        "title": "📖 Documentation",
+        "semver": "patch"
+      },
+      "build": {
+        "title": "📦 Build",
+        "semver": "patch"
+      },
+      "types": {
+        "title": "🌊 Types",
+        "semver": "patch"
+      },
+      "chore": {
+        "title": "🦉 Chore"
+      },
+      "examples": {
+        "title": "🏀 Examples"
+      },
+      "test": {
+        "title": "🧪 Tests"
+      },
+      "style": {
+        "title": "🎨 Styles"
+      },
+      "ci": {
+        "title": "🤖 CI"
+      }
+    },
+    "templates": {
+      "commitMessage": "chore(🦉): v{{newVersion}}",
+      "tagMessage": "v{{newVersion}}",
+      "tagBody": "v{{newVersion}}"
+    }
+  }
+}
