@@ -188,8 +188,8 @@ describe('KomiError', () => {
             expect(error1.uuid).not.toBe(error2.uuid);
             expect(error2.uuid).not.toBe(error3.uuid);
             expect(error1.uuid).not.toBe(error3.uuid);
-            // check if UUIDs are in valid format
-            expect(error1.uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
+            // check if UUIDs are in valid format (v4 for Node.js, v7 for Bun)
+            expect(error1.uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[47][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
         });
 
         test('should have creation dates close to current time', () => {
@@ -372,6 +372,28 @@ describe('KomiError', () => {
             expect(stringError.cause).toBe(stringCause);
             expect(numberError.cause).toBe(numberCause);
             expect(booleanError.cause).toBe(booleanCause);
+        });
+    });
+
+    describe('when testing UUID integration', () => {
+        test('should generate valid and unique UUIDs for error instances', () => {
+            const error1 = new KomiError({ message: 'Test error 1' });
+            const error2 = new KomiError({ message: 'Test error 2' });
+            const error3 = new KomiError({ message: 'Test error 3' });
+
+            // All UUIDs should be valid format (v4 for Node.js, v7 for Bun)
+            const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[47][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+            expect(error1.uuid).toMatch(uuidPattern);
+            expect(error2.uuid).toMatch(uuidPattern);
+            expect(error3.uuid).toMatch(uuidPattern);
+
+            // All UUIDs should be unique
+            expect(error1.uuid).not.toBe(error2.uuid);
+            expect(error2.uuid).not.toBe(error3.uuid);
+            expect(error1.uuid).not.toBe(error3.uuid);
+
+            // UUIDs should be consistent for the same instance
+            expect(error1.uuid).toBe(error1.uuid);
         });
     });
 });
