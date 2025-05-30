@@ -1,7 +1,5 @@
 # 📦 komi-logger
 
-> ONLY FOR BUN
-
 [![npm version](https://badge.fury.io/js/komi-logger.svg)](https://badge.fury.io/js/komi-logger)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-Ready-orange.svg)](https://bun.sh/)
