@@ -66,7 +66,11 @@ export class Logger<TStrategies extends StrategyMap = {}> extends TypedEventEmit
                 this._executeStrategies(chunk.level, new Date(chunk.date), chunk.object, chunk.strategiesNames)
                     .then(() => callback())
                     .catch((error: unknown) => {
-                        this.emit('error', error as Error);
+                        this.emit('error', error as KomiError<{
+                            strategyName: string;
+                            object: unknown;
+                            error: Error;
+                        }>);
                         callback();
                     });
             }
