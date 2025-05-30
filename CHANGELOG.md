@@ -1,4 +1,20 @@
 
+## v1.2.0
+
+[compare changes](https://github.com/Komiriko/komi-logger/compare/v1.1.2...v1.2.0)
+
+### 🚀 Enhancements
+
+- **🚀:** [Add randomUUID utility and refactor KomiError class for node compatibility] ([ba536ea](https://github.com/Komiriko/komi-logger/commit/ba536ea))
+
+### 🧪 Tests
+
+- **🧪:** [Add tests for randomUUID utility function] ([5a63869](https://github.com/Komiriko/komi-logger/commit/5a63869))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.1.2
 
 [compare changes](https://github.com/Komiriko/komi-logger/compare/v1.1.1...v1.1.2)
