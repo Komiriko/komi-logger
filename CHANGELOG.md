@@ -1,4 +1,17 @@
 
+## v1.2.1
+
+[compare changes](https://github.com/Komiriko/komi-logger/compare/v1.2.0...v1.2.1)
+
+### 🦉 Chore
+
+- **🦉:** V1.2.0 ([b0dc71d](https://github.com/Komiriko/komi-logger/commit/b0dc71d))
+- **🦉:** V1.2.0 ([92248e9](https://github.com/Komiriko/komi-logger/commit/92248e9))
+
+### ❤️ Contributors
+
+- Github-actions <komiriko@pm.me>
+
 ## v1.2.0
 
 [compare changes](https://github.com/Komiriko/komi-logger/compare/v1.1.2...v1.2.0)
