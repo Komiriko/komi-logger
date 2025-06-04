@@ -52,7 +52,8 @@ The logger uses a transform stream to process log entries asynchronously. Each l
 ### Basic Setup
 
 ```typescript
-import { Logger, ConsoleLoggerStrategy, FileLoggerStrategy } from 'komi-logger';
+import { Logger } from 'komi-logger';
+import { ConsoleLoggerStrategy, FileLoggerStrategy } from 'komi-logger/strategies';
 
 // Create a logger with console strategy
 const logger = new Logger()
@@ -89,7 +90,8 @@ The most powerful feature of komi-logger is its **advanced type safety system**.
 When you implement `LoggerStrategy<TLogObject>`, you specify the exact type of object that strategy expects:
 
 ```typescript
-import { Logger, type LoggerStrategy, type LogLevels } from 'komi-logger';
+import { Logger } from 'komi-logger';
+import type { LoggerStrategy, LogLevels } from 'komi-logger/types';
 
 // Define specific interfaces for different logging contexts
 interface DatabaseLog {
