@@ -1,8 +1,8 @@
 import type { KomiErrorOptions } from './types/komiErrorOptions';
 
-import { randomUUID } from '#/utils/randomUUID';
+import { randomUUID } from 'crypto';
 
-const randomUuid = await randomUUID();
+// const randomUuid = await randomUUID();
 
 /**
  * A custom error class that extends the native {@link Error} class, providing additional properties
@@ -53,7 +53,7 @@ export class KomiError<const TCause = unknown> extends Error {
      * The unique identifier of the error, automatically generated using UUID v7.
      * This identifier is particularly useful for tracking errors in logs.
      */
-    private readonly _uuid: string = randomUuid();
+    private readonly _uuid: string = randomUUID();
 
     /**
      * The date when the error was created, automatically set to the current date and time.
