@@ -1,4 +1,16 @@
 
+## v1.2.5
+
+[compare changes](https://github.com/Komiriko/komi-logger/compare/v1.2.4...v1.2.5)
+
+### 🦉 Chore
+
+- **🦉:** [Update README.md] ([45e9036](https://github.com/Komiriko/komi-logger/commit/45e9036))
+
+### ❤️ Contributors
+
+- Komiriko <komiriko@pm.me>
+
 ## v1.2.4
 
 [compare changes](https://github.com/Komiriko/komi-logger/compare/v1.2.3...v1.2.4)
