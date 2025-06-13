@@ -1,4 +1,9 @@
 {
+  "typedocOptions": {
+    "out": "docs",
+    "hideGenerator": true,
+    "customFooterHtml": "<p>Generated with ❤️</p>",
+  },
   "include": ["source/**/*.ts"],
   "compilerOptions": {
     // Type Checking
