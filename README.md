@@ -1,8 +1,6 @@
 # 📦 komi-logger
 
-[![npm version](https://badge.fury.io/js/komi-logger.svg)](https://badge.fury.io/js/komi-logger)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
-[![Bun](https://img.shields.io/badge/Bun-Ready-orange.svg)](https://bun.sh/)
+![komi-logger-wall](https://github.com/user-attachments/assets/8ed0c4fa-f41a-4d86-bbba-d7a3aa49db47)
 
 ## 📌 Table of contents
 
@@ -22,7 +20,7 @@
         - [Strategy Management](#strategy-management)
         - [Available Log Levels](#available-log-levels)
         - [Configuration Options](#configuration-options)
-    - [🌟 Documentation](#-Documentation)
+    - [🌟 Documentation](#-documentation)
     - [⚖️ License](#-license)
     - [📧 Contact](#-contact)
 
