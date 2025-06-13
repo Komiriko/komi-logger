@@ -16,25 +16,23 @@ await Bun.build({
     external: [...dependencies, ...devDependencies, ...peerDependencies],
     root: './source',
     entrypoints: [
-        './source/enums/index.ts',
-
+        // # ————————— Error ————————— #
         './source/error/index.ts',
         './source/error/types/index.ts',
 
+        // # ————————— Strategies ————————— #
         './source/strategies/index.ts',
 
+        // # ————————— Types ————————— #
         './source/types/index.ts',
 
+        // # ————————— Root ————————— #
         './source/index.ts'
     ],
     outdir: './dist',
     splitting: true,
     format: 'esm',
-    minify: {
-        identifiers: false,
-        syntax: true,
-        whitespace: true
-    },
+    minify: true,
     sourcemap: 'none'
 });
 
