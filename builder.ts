@@ -32,11 +32,7 @@ await Bun.build({
     outdir: './dist',
     splitting: true,
     format: 'esm',
-    minify: {
-        identifiers: false,
-        syntax: true,
-        whitespace: true
-    },
+    minify: true,
     sourcemap: 'none'
 });
 
