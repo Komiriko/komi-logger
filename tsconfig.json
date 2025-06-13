@@ -1,15 +1,5 @@
 {
-  "typedocOptions": {
-    "entryPoints": [
-      "source/**/*.ts"
-    ],
-    "exclude": [
-      "./**/index.ts"
-    ],
-    "out": "docs"
-  },
   "compilerOptions": {
-
     // Type Checking
     "strict": true,
     "allowUnreachableCode": false,
