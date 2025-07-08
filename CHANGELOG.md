@@ -1,4 +1,20 @@
 
+## v1.2.6
+
+[compare changes](https://github.com/Komiriko/komi-logger/compare/v1.2.5...v1.2.6)
+
+### 📦 Build
+
+- **📦:** [Build improvement + update] ([00ffcaf](https://github.com/Komiriko/komi-logger/commit/00ffcaf))
+
+### 🎨 Styles
+
+- **🎨:** [Change style indent..] ([7a7945a](https://github.com/Komiriko/komi-logger/commit/7a7945a))
+
+### ❤️ Contributors
+
+- Komiroko <komiriko@pm.me>
+
 ## v1.2.5
 
 [compare changes](https://github.com/Komiriko/komi-logger/compare/v1.2.4...v1.2.5)
