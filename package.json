@@ -30,23 +30,21 @@
   },
   "scripts": {
     "build": "bun builder.ts",
-    "docs": "typedoc --tsconfig tsconfig.dts.json",
+    "dev": "bun --watch sandbox/index.ts",
+    "docs": "typedoc --tsconfig tsconfig.build.json",
     "fix-lint": "eslint --fix ./source",
     "lint": "eslint ./source",
-    "start": "bun build/index.js",
     "test:unit": "bun test --coverage $(find test/unit -name '*.spec.ts')",
     "test": "bun test --coverage"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@stylistic/eslint-plugin": "^4.4.1",
-    "@types/bun": "^1.2.16",
-    "eslint-plugin-tsdoc": "^0.4.0",
-    "eslint": "^9.29.0",
-    "globals": "^16.2.0",
-    "tsc-alias": "^1.8.16",
-    "typedoc": "^0.28.5",
-    "typescript-eslint": "^8.34.0"
+    "@eslint/js": "^9.30.1",
+    "@stylistic/eslint-plugin": "^5.1.0",
+    "@types/bun": "^1.2.18",
+    "eslint": "^9.30.1",
+    "globals": "^16.3.0",
+    "typedoc": "^0.28.7",
+    "typescript-eslint": "^8.36.0"
   },
   "peerDependencies": {
     "typescript": "^5.8.3"
