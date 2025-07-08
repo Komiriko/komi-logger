@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // Type Checking
+    // ———————————— Type Checking ———————————— //
     "strict": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -15,11 +15,10 @@
     "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-
-    // Modules
+    // —————————————— Modules —————————————— //
     "allowArbitraryExtensions": true,
     "allowImportingTsExtensions": true, // This flag is only allowed when --noEmit or --emitDeclarationOnly is enabled
-    "module": "ESNext",
+    "module": "Preserve",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
     "noUncheckedSideEffectImports": true,
@@ -28,16 +27,14 @@
       "#/root/*": ["./*"],
     },
     "resolveJsonModule": true,
-
-    // Emit
+    // —————————————— Emit —————————————— //
+    "outDir": "./dist",
     "noEmit": true,
     "removeComments": false,
-
-    // Javascript Support
+    // ——————— Javascript Support ——————— //
     "allowJs": true,
     "checkJs": true,
-
-    // Interop Constraints
+    // ——————— Interop Constraints ——————— //
     "allowSyntheticDefaultImports": true, // true if moduleResolution is bundler
     "erasableSyntaxOnly": true,
     "esModuleInterop": false,
@@ -45,8 +42,7 @@
     "verbatimModuleSyntax": true,
     "lib": ["ESNext"],
     "target": "ESNext",
-
-    // Completeness
-    "skipLibCheck": true,
+    // ——————————— Completeness ——————————— //
+    "skipLibCheck": true
   }
 }

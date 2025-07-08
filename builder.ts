@@ -7,8 +7,8 @@ const peerDependencies = 'peerDependencies' in pkg ? Object.keys(pkg.peerDepende
 await Bun.$`rm -rf dist`;
 console.log('🗑️  Deleted dist folder if it existed. ✅');
 
-await Bun.$`tsc --project tsconfig.dts.json`;
-await Bun.$`tsc-alias -p tsconfig.dts.json`;
+await Bun.$`tsc --project tsconfig.build.json`;
+await Bun.$`bunx tsc-alias -p tsconfig.build.json`;
 console.log('🔍 Type analysis and generation completed. ✅');
 
 await Bun.build({
@@ -32,7 +32,7 @@ await Bun.build({
     outdir: './dist',
     splitting: true,
     format: 'esm',
-    minify: true,
+    minify: false,
     sourcemap: 'none'
 });
 
